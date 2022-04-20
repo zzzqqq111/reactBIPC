@@ -1,0 +1,74 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: @body-background;
+
+  .leftmenu {
+    display: inline-block;
+    width: 15%;
+    background-color: @body-background;
+    :global {
+      .ant-menu-inline {
+        border: none;
+      }
+
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        margin-top: 0;
+        font-weight: bold;
+      }
+
+      .ant-menu-sub.ant-menu-inline .ant-menu-sub.ant-menu-inline > .ant-menu-item {
+        padding-left: 0 !important;
+      }
+    }
+  }
+
+  .right {
+    display: inline-block;
+    width: 85%;
+    vertical-align: top;
+    background-color: #f0f2f5;
+    border-left: #f0f2f5 8px solid;
+
+    .title {
+      margin-bottom: 12px;
+      color: @heading-color;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  :global {
+    .ant-list-split .ant-list-item:last-child {
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .ant-list-item {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+
+    .ant-table-thead > tr > th {
+      white-space: initial;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    .leftmenu {
+      width: 100%;
+    }
+
+    .right {
+      width: 100%;
+      border-left: none;
+    }
+  }
+}

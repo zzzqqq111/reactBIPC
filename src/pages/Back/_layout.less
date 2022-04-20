@@ -1,0 +1,54 @@
+@import '~antd/lib/style/themes/default.less';
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  :hover {
+    color: #1890ff;
+  }
+}
+
+@nav-header-height: @layout-header-height;
+
+.logo {
+  position: relative;
+  height: @nav-header-height;
+  padding-left: (@menu-collapsed-width - 32px) / 2;
+  overflow: hidden;
+  line-height: @nav-header-height;
+  background: #002140;
+  transition: all 0.3s;
+  img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+  }
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+  }
+}
+.userMessage {
+  margin-left: 20px;
+  color: #333;
+  font-weight: bold;
+  line-height: 50px;
+}
+.tabletd {
+  width: '15%';
+}
+.editable {
+  td {
+    padding-top: 13px !important;
+    padding-bottom: 12.5px !important;
+  }
+}

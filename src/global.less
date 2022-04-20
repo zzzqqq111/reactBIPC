@@ -1,0 +1,144 @@
+@import '~antd/lib/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.disnone {
+  display: none;
+}
+
+.flex {
+  display: flex;
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-start {
+    justify-content: flex-start;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+.m {
+  &-top-4 {
+    margin-top: 4px;
+  }
+
+  &-top-8 {
+    margin-top: 8px;
+  }
+
+  &-top-16 {
+    margin-top: 16px;
+  }
+
+  &-bottom-4 {
+    margin-bottom: 4px;
+  }
+
+  &-bottom-16 {
+    margin-bottom: 16px;
+  }
+
+  &-right-8 {
+    margin-right: 8px;
+  }
+
+  &-right-24 {
+    margin-right: 24px;
+  }
+
+  &-right-32 {
+    margin-right: 32px;
+  }
+}
+
+.p {
+  &-top-4 {
+    padding-top: 4px;
+  }
+
+  &-top-16 {
+    padding-top: 16px;
+  }
+
+  &-bottom-60 {
+    padding-bottom: 60px;
+  }
+}
+
+.b {
+  &-top-dashed {
+    border-top: #e9e9e9 1px dashed;
+  }
+}
+
+.container {
+  padding: 16px 24px 0;
+  background-color: #fff;
+}
+
+.float-r {
+  float: right;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.ant-table {
+  width: 100%;
+  overflow-x: auto;
+
+  .ant-table-scroll {
+    overflow-x: scroll;
+
+    .ant-table-body {
+      overflow: visible !important;
+    }
+  }
+
+  &-thead > tr,
+  &-tbody > tr {
+    > th,
+    > td {
+      white-space: pre;
+
+      > span {
+        display: block;
+      }
+    }
+  }
+}

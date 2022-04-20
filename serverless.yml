@@ -1,0 +1,15 @@
+# serverless.yml
+# 文档说明：https://github.com/serverless-components/tencent-cos/blob/master/docs/configure.md
+
+component: nero-sls-cos # (必填) 组件名称
+name: ${env:PROJECT_NAME} # (必填) 实例名称
+#org: orgDemo # (可选) 用于记录组织信息，默认值为您的腾讯云账户 appid
+
+inputs:
+  src: ./build/
+  bucket: fe-site-${env:CODE_ENV}
+  targetDir: /${env:PROJECT_NAME}/
+  protocol: https
+  region: ap-shanghai
+  acl:
+    permissions: public-read

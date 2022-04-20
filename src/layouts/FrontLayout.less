@@ -1,0 +1,31 @@
+@import '~antd/lib/style/themes/default.less';
+@nav-header-height: @layout-header-height;
+.logo {
+  position: relative;
+  float: left;
+  width: 15%;
+  height: @nav-header-height;
+  overflow: hidden;
+  line-height: @nav-header-height;
+  transition: all 0.3s;
+  img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+  }
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+  }
+}
+
+:global {
+  .ant-menu-dark.ant-menu-horizontal > .ant-menu-item {
+    margin-right: 20px;
+  }
+}
